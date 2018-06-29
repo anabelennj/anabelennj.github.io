@@ -1,0 +1,110 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Carrito</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+<link href="css/estilosquienes.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Baloo+Paaji" rel="stylesheet">
+</head>
+
+<body>
+<div class=" principal">
+	<div class="cabecera">
+		
+    	<div class="container" id="logo">
+			<div class="row">
+				<div class="col-md-auto" id="titulo"><h1>Mi Carrito Online</h1></div>
+				<div class="col-md-auto" id="imagenlogo"><img src="img/carrito.png" width="60" height="57" alt=""/></div>
+			</div>
+		</div>
+		
+		
+        <div class="container" id="panel">
+        	<div class="row" id="botones">
+            	<div class="col boton"><a href="index.html">Inicio</a></div>
+              	<div class="col boton"><a href="Productos.html">Productos</a></div>
+                <div class="col boton"><a href="Promociones.html">Promociones</a></div>
+                <div class="col boton"><a href="Carrito.html">Carrito</a></div>
+                <div class="col boton"><a href="Contacto.html">Contacto</a></div>
+				<div class="col activo"><a href="Quienes.html">Quienes Somos</a></div>
+            </div>
+        </div>
+		
+	</div>
+	
+	
+	
+	<div class="container" id="contenido">
+		
+		
+		<div class="row justify-content-center">
+			
+			<div class="p-2">
+				
+				<div class="d-flex align-items-center flex-column">		
+					<div class="p-2 foto"><img src="img/ana.jpg" width="200" height="200" alt=""/></div>
+					<div class="p-2 informacion">Ana Belén Negrete <br> Estudiante de Ingeniería en Computación</div>
+				</div>
+				
+			</div>
+			
+			
+			<div class="p-2">
+				
+				<div class="d-flex align-items-center flex-column">		
+					<div class="p-2 foto"><img src="img/daniel.jpg" width="200" height="200" alt=""/></div>
+					<div class="p-2 informacion">Daniel García <br> Estudiante de Ingeniería en Computación</div>
+				</div>
+				
+			</div>
+			
+		</div>
+			
+		
+		
+		<div  class="d-flex flex-column">
+			
+			<div class="p-2 titulo">Encuéntrenos</div>
+			<div class="p-2 mapa">
+				<div id="map"></div>
+			</div>
+			
+		</div>
+		
+		
+		
+	</div>
+	
+    
+	
+	<div class="container" id="pie">
+      <div class="row justify-content-center" id="copyright">Ana Belen Negrete &amp; Daniel Garcia © 2018</div>
+    </div>
+	
+	
+</div>
+	
+	
+
+	
+	
+<script>
+function initMap() {
+  var guayaquil = {lat: -2.203816, lng: -79.897453};
+  var map = new google.maps.Map(
+      document.getElementById('map'), {zoom: 10, center: guayaquil});
+  var marker = new google.maps.Marker({position: guayaquil, map: map});
+}
+</script>
+	
+	
+<script async defer
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcJMHzgOXvYYv5UKh1OuDY1W1cBHGK760&callback=initMap">
+</script>
+
+	
+</body>
+</html>
+
